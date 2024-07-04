@@ -1,0 +1,24 @@
+{
+  "name": "ocr-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "buffer-to-stream": "^1.0.0",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "node-tesseract-ocr": "^2.2.1",
+    "nodemon": "^3.1.4",
+    "sharp": "^0.33.4",
+    "tesseract.js": "^5.1.0"
+  }
+}
