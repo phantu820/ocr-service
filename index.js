@@ -53,6 +53,7 @@ app.post("/send-notification", async (req, res) => {
       let ticketChunk = await expo.sendPushNotificationsAsync(chunk);
       tickets.push(...ticketChunk);
     }
+    console.log("ok");
     res.status(200).send(tickets);
   } catch (error) {
     res.status(500).send(error);
