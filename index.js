@@ -17,6 +17,7 @@ app.get("/ocr", (req, res) => {
 
 app.post("/ocr", upload.array("images"), async (req, res) => {
   try {
+    console.log("vao ocr");
     const images = req.files;
     const data = await Promise.all(
       images.map(async (file) => {
