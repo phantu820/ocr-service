@@ -22,8 +22,6 @@ app.post("/ocr", upload.array("images"), async (req, res) => {
     const data = await Promise.all(
       images.map(async (file) => {
         const result = await mainFun(file.path);
-        // Xoá tệp sau khi xử lý
-        // fs.unlinkSync(file.path);
         return result;
       })
     );
